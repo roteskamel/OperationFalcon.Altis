@@ -63,7 +63,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14673.875,17.91,16801.732};
+					position[]={14654.479,17.91,16778.947};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -410,7 +410,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="NeueAusruestung";
-			init="this addAction [""FTL"",""scripts\ausftl.sqf""]; this allowDamage false;";
+			init="this addAction [""FTL"",""scripts\ausftl.sqf""]; this addAction [""SQL"",""scripts\aussql.sqf""]; this addAction [""Automatic Rifleman"",""scripts\ausar.sqf""]; this addAction [""Assistant Auromatic Rifleman"",""scripts\ausaar.sqf""]; this addAction [""Rifleman"",""scripts\ausrifle.sqf""]; this addAction [""Medic"",""scripts\ausmed.sqf""]; this allowDamage false;";
 		};
 		class Item1
 		{
