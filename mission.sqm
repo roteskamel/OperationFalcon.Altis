@@ -63,7 +63,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14644.708,17.91,16735.65};
+					position[]={14673.875,17.91,16801.732};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -401,7 +401,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2;
+		items=4;
 		class Item0
 		{
 			position[]={14654.034,17.91,16785.447};
@@ -420,6 +420,26 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="NeuerMarker";
+		};
+		class Item2
+		{
+			position[]={14663.301,17.91,16803.254};
+			id=12;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			text="zielgebiet";
+			init="this addAction [""Teleport - Zurück zur Base"",""Scripts\teleport.sqf"",[base]]; this allowDamage false;";
+		};
+		class Item3
+		{
+			position[]={14668.709,17.91,16797.686};
+			id=13;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			text="base";
+			init="this addAction [""Teleport - Zielgebiet"",""Scripts\teleport.sqf"",[zielgebiet]]; this allowDamage false;";
 		};
 	};
 	class Markers
