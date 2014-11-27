@@ -38,15 +38,15 @@ e12_tools_settings_admins = ["Spirit"];
 
 e12_tools_custom_self1 = {true}; 
 e12_tools_custom_self1_text = "Gruppenmarker erzeugen"; 
-e12_tools_custom_self1_code = { ret=[group player,["A-SL","sl","ColorBlue"]] call e12_amf_tracking_fnc_createMarker; };
+e12_tools_custom_self1_code = [-2, {_this call e12_amf_tracking_fnc_createMarker;}, [group player, ["A-SL","sl","ColorBlue"]]] call CBA_fnc_globalExecute;
 
 
 
 
 //////////////////////////////////////
-//////  Endtrigger  nur für S  //////
+//////  Endtrigger  nur für S  ///////
 //////////////////////////////////////
-if (local player) then {
-   player enableFatigue false;
-   player addEventhandler ["Respawn", {player enableFatigue false}];
-};
+//if (local player) then {
+//   player enableFatigue false;
+//   player addEventhandler ["Respawn", {player enableFatigue false}];
+//};
