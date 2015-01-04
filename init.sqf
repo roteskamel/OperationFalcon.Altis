@@ -36,12 +36,6 @@ e12_tools_settings_admins = ["Spirit"];
 //e12_tools_custom//
 ////////////////////
 
-e12_tools_custom_self1 = {true}; 
-e12_tools_custom_self1_text = "Gruppenmarker erzeugen"; 
-e12_tools_custom_self1_code = [-2, {_this call e12_amf_tracking_fnc_createMarker;}, [group player, ["A-SL","sl","ColorBlue"]]] call CBA_fnc_globalExecute;
-
-
-
 
 //////////////////////////////////////
 //////  Endtrigger  nur für S  ///////

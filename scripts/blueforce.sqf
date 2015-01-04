@@ -1,0 +1,1 @@
+[-2, (group player) setGroupID ["A SQL"]] call CBA_fnc_globalExecute;

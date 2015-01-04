@@ -1,3 +1,5 @@
+
+(_this select 1) setVariable ["AGM_Medical_fnc_isMedic",false];
 removeallweapons (_this select 1);
 removeallassigneditems (_this select 1);
 removeuniform (_this select 1);
