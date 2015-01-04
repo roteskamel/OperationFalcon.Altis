@@ -12,7 +12,8 @@ class Mission
 		"agm_logistics",
 		"agm_respawn",
 		"A3_Characters_F",
-		"A3_Structures_F_Mil_Flags"
+		"A3_Structures_F_Mil_Flags",
+		"A3_Structures_F_Civ_InfoBoards"
 	};
 	addOnsAuto[]=
 	{
@@ -25,6 +26,7 @@ class Mission
 		"agm_respawn",
 		"A3_Characters_F",
 		"A3_Structures_F_Mil_Flags",
+		"A3_Structures_F_Civ_InfoBoards",
 		"a3_map_altis"
 	};
 	randomSeed=13140175;
@@ -57,7 +59,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14677.658,17.91,16778.953};
+					position[]={14659.985,17.91,16777.359};
 					id=0;
 					side="WEST";
 					vehicle="rhsusf_army_ucp_rifleman";
@@ -376,7 +378,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			position[]={14667.146,17.91,16793.008};
@@ -398,7 +400,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={14657.511,17.91,16763.025};
+			position[]={14656.26,17.91,16763.357};
 			id=10;
 			side="EMPTY";
 			vehicle="FlagPole_F";
@@ -417,6 +419,17 @@ class Mission
 			skill=0.60000002;
 			text="base";
 			init="this addaction [""Teleport - Zum Zielgebiet"", ""Scripts\teleport.sqf"", [zielgebiet]]; this allowDamage false;";
+		};
+		class Item4
+		{
+			position[]={14660.187,17.91,16782.771};
+			id=12;
+			side="EMPTY";
+			vehicle="MapBoard_altis_F";
+			leader=1;
+			skill=0.60000002;
+			text="specbox";
+			init="specbox allowDamage false; specbox addAction [ ""Spectator"", { nul = [player] execVM ""spectator\specta.sqf"" } ];";
 		};
 	};
 };
