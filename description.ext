@@ -27,3 +27,7 @@ class Header
 //};
 
 #include "spectator\spectating.hpp"
+class CfgFunctions 
+{
+    #include "LVR\functions\functions.hpp"
+};  

@@ -13,7 +13,9 @@ class Mission
 		"agm_respawn",
 		"A3_Characters_F",
 		"A3_Structures_F_Mil_Flags",
-		"A3_Structures_F_Civ_InfoBoards"
+		"A3_Structures_F_Civ_InfoBoards",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles"
 	};
 	addOnsAuto[]=
 	{
@@ -27,6 +29,8 @@ class Mission
 		"A3_Characters_F",
 		"A3_Structures_F_Mil_Flags",
 		"A3_Structures_F_Civ_InfoBoards",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
 		"a3_map_altis"
 	};
 	randomSeed=13140175;
@@ -59,7 +63,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14659.985,17.91,16777.359};
+					position[]={14633.725,17.91,16761.184};
+					azimut=69.27124;
 					id=0;
 					side="WEST";
 					vehicle="rhsusf_army_ucp_rifleman";
@@ -395,10 +400,10 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
-			position[]={14667.146,17.91,16793.008};
+			position[]={14630.964,17.91,16775.082};
 			id=9;
 			side="EMPTY";
 			vehicle="FlagPole_F";
@@ -447,6 +452,16 @@ class Mission
 			skill=0.60000002;
 			text="specbox";
 			init="specbox allowDamage false; specbox addAction [ ""Spectator"", { nul = [player] execVM ""spectator\specta.sqf"" } ];";
+		};
+		class Item5
+		{
+			position[]={14623.411,17.91,16764.672};
+			azimut=-227.625;
+			id=14;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			skill=0.60000002;
+			init="_nul = [ this, 120, 10 ] spawn LVR_fnc_vehRespawn;";
 		};
 	};
 };

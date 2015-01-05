@@ -20,7 +20,7 @@ removeGoggles (_this select 1);
 (_this select 1) assignitem "ACRE_PRC343";
 
 (_this select 1) addMagazine "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-(_this select 1) addweapon "rhs_weap_m4a1_grip";
+(_this select 1) addweapon "rhs_weap_m16a4";
 
 (_this select 1) addMagazine "rhs_m136_mag";
 (_this select 1) addweapon "rhs_weap_M136";
